@@ -1,6 +1,3 @@
-import react from 'react'
-import TodoCards from './TodoCard'
-
 const TodoList=(props)=>{
 
     
