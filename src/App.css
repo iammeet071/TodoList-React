@@ -1,38 +1,100 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+  background-color: rgba(192, 174, 209, 0.89);
+  font-family: 'Baloo Bhaina 2', cursive;
+
+}
+.container{
+
+  margin: 2em;
+  padding-top:.6em ;
+  width: 22em;
+  height: auto;
+  background-color: rgb(253, 253, 253);
+  border-radius:24px ;
+  box-shadow: 5px 5px 42px  7px rgba(142, 148, 158, 0.836);
+}
+.container .heading{
+  margin-top: 1em;
+  padding-top: 2.3px;
+  color: white;
+  height: 1.6em;
+  background-color: rgba(79, 33, 90, 0.836);
+}
+.todoinou .todoin{
+  margin-top: 1.8em;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.todoinou .todoin #input{
+  border: none;
+  border-bottom:2px solid rgba(79, 33, 90, 0.836) ;
+  outline: none;
+
   text-align: center;
+  font-size: 17px;
+  
+} 
+.todoin .add{
+  font-size: 30px;
+  padding: 0;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 1.5em;
+  border: none;
+  background-color:rgba(79, 33, 90, 0.836) ;
+  color: white;
+  box-shadow: 2px 2px 12px rgb(92, 89, 89);
+}
+.todoin .add:hover{
+  background-color: green;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tododata{
+  margin-top: 2em;
+  padding-left: 1.6em;
+  padding-right: 1.6em;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
+}
+.tododata ol li{
+  list-style: none;
+  margin-bottom: 0em;
+  font-size: 22px;
+  text-transform:capitalize;
+  color: rgba(79, 33, 90, 0.836);  
+  text-align: left;
+}
+.tododata ol li button{
+  margin-right: 10px;
+}
+.tododata button{
+  font-size: 12px;
+  padding: 0;
+  width: 2.7em;
+  height: 2.7em;
+  border-radius: 3em;
+  border: none;
+  background-color:rgba(79, 33, 90, 0.836) ;
   color: white;
+  box-shadow: 2px 2px 12px rgb(92, 89, 89);
 }
-
-.App-link {
-  color: #61dafb;
+.tododata button:hover{
+  background-color: red;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listss{
+  display: flex;
+  
+}
+.listss button{
+  margin-right: 10px;
 }
